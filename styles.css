@@ -1,23 +1,61 @@
 .chessboard {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100px;
+    width: 100px; */
+    position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	
+	display: flex;
+	flex-wrap: wrap;
+	border: 4vw solid transparent;
+	max-width: 480px;
+	max-height: 480px;
+	width: 100vw;
+	height: 100vw;
+	box-shadow: 0 10px 10px -5px rgba(0,0,0,.75);
+	font-size: 150%;
+    
+	/* background-image: url("http://www.wood-database.com/wp-content/uploads/bamboo-qs-sealed.jpg"); */
 }
 
-.gray, .black {
-    flex: 50%;
-    height: 50px;
+.box, .box-white {
     display: flex;
+    width: 12.5%;
+	height: 12.5%;
     justify-content: center;
     align-items: center;
+    /* font-size: 8vw; */
+	/* line-height: 12vw; */
 }
 
-.gray {
-    background-color: gray;
+.box {
+    background-color: rgba(135,50,0,.5);
 }
 
-.black {
-    background-color: black;
-    color: white;
+.box-white {
+    background-color: whitesmoke;
 }
+
+/* .box:nth-child(n+1):nth-child(-n+16){
+	color: #222;
+} */
+
+/* *{
+	box-sizing: border-box;
+} */
+
+/* .chessboard .box:nth-child(n+1):nth-child(-n+8):nth-child(even),
+.chessboard .box:nth-child(n+17):nth-child(-n+25):nth-child(even),
+.chessboard .box:nth-child(n+33):nth-child(-n+40):nth-child(even),
+.chessboard .box:nth-child(n+49):nth-child(-n+56):nth-child(even),
+.chessboard .box:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.chessboard .box:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.chessboard .box:nth-child(n+41):nth-child(-n+48):nth-child(odd),
+.chessboard .box:nth-child(n+57):nth-child(-n+64):nth-child(odd){
+	background-color: rgba(135,50,0,.5);
+} */
