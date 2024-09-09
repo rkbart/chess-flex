@@ -1,0 +1,23 @@
+.chessboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.gray, .black {
+    flex: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
